@@ -1,0 +1,7 @@
+<div style="text-align:center">
+  <h1>Calculadora</h1>
+  <app-calculator (result)="onResultCalculated($event)"></app-calculator>
+  <div *ngIf="result !== null">
+    <h2>Resultado: {{ result }}</h2>
+  </div>
+</div>

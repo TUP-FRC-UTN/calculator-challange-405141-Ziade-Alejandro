@@ -1,0 +1,13 @@
+<div>
+  <input [(ngModel)]="value1" type="number" placeholder="Valor 1" />
+  <input [(ngModel)]="value2" type="number" placeholder="Valor 2" />
+  <select [(ngModel)]="operation">
+    <option value="sum">Suma</option>
+    <option value="subtract">Resta</option>
+    <option value="multiply">Multiplicación</option>
+    <option value="divide">División</option>
+    <option value="power">Potencia</option>
+    <option value="sqrt">Raíz</option>
+  </select>
+  <button (click)="calculate()">Calcular</button>
+</div>
