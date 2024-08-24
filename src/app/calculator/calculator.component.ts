@@ -1,6 +1,5 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
 @Component({
   selector: 'app-calculator',
   standalone: true,
@@ -11,11 +10,12 @@ import { FormsModule } from '@angular/forms';
 export class CalculatorComponent {
   value_first: number = 0;
   value_second: number = 0;
+
   operation: string = 'sum';
 
   @Output() result = new EventEmitter<number>();
 
-  caluclate() {
+  calculate() {
     let result: number;
     switch (this.operation) {
       case 'sum':
